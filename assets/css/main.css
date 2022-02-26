@@ -4,6 +4,7 @@
 
 * {
   margin: 0;
+  padding: 0;
 }
 
 html, body {
@@ -31,13 +32,30 @@ p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
 }
 
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "SVN-Poppins";
+  src: url(../../SVN_Poppins/PoppinsVN-500.ttf);
+}
 html {
   font-size: 62.5%;
 }
 
 body {
   margin: 0 auto;
-  font-family: "Poppins", sans-serif;
+  font-family: "SVN-Poppins", sans-serif;
+  color: white;
 }
 
 section {
@@ -56,9 +74,13 @@ img {
   max-height: 100%;
 }
 
+#main {
+  background: #002631;
+}
+
 .container {
-  max-width: 1920px;
-  width: 100%;
+  width: 1920px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 0 12rem;
 }
@@ -76,6 +98,104 @@ img {
   .container {
     padding: 0 2.4rem;
   }
+}
+
+header {
+  background-color: white;
+}
+
+.header {
+  height: 18rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__small {
+  display: none;
+}
+.header__logo {
+  max-width: 27.4rem;
+}
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 30rem;
+}
+.header__nav-item a {
+  color: black;
+  font-family: SVN-Poppins;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: center;
+  padding: 0 3rem;
+}
+.header__nav-item a img {
+  display: inline-block;
+}
+.header__search {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 7.8rem;
+  border-left: 1px solid #C4C4C4;
+}
+
+.hero {
+  width: 100%;
+  background: #002631 url(".././image/bg_hero.png") no-repeat center/cover;
+}
+
+.container > .hero__heading {
+  padding: 39rem 0;
+  max-width: 59rem;
+}
+
+.hero__heading-title {
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 50px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 3rem;
+}
+.hero__heading-subtitle {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.hero__block .hero__heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 16rem;
+}
+.hero__block .hero__heading-title {
+  padding-right: 7rem;
+  flex-basis: 40%;
+}
+.hero__block .hero__heading-subtitle {
+  flex-basis: 60%;
+  position: relative;
+  padding-top: 20px;
+}
+.hero__block .hero__heading-subtitle.subtitle-line::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 5px;
+  background-color: #00C1C1;
 }
 
 /*# sourceMappingURL=main.css.map */
