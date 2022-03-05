@@ -1,0 +1,163 @@
+.services {
+}
+.services__how {
+  margin-top: 160px;
+  &-text {
+    display: flex;
+    gap: 0 95px;
+    margin-bottom: 10rem;
+    &-heading {
+      font-family: SVN-Poppins;
+      font-size: 42px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 44px;
+      letter-spacing: 0em;
+      text-align: left;
+      max-width: 385px;
+    }
+    &-subheading {
+      font-family: SVN-Poppins;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 36px;
+      letter-spacing: 0em;
+      text-align: left;
+      position: relative;
+      padding-top: 20px;
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50px;
+        height: 5px;
+        background: #00c1c1;
+      }
+    }
+  }
+  &-lists {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 80px 60px;
+    margin-bottom: 10rem;
+    &-item {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      padding: 5rem;
+      background-color: $dark-bg;
+      .services-item-left {
+        display: flex;
+        align-items: flex-start;
+        &-img {
+          margin-right: 3rem;
+        }
+        &-subheading {
+          margin-right: 6.6rem;
+          max-width: 395px;
+          font-family: SVN-Poppins;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 19px;
+          letter-spacing: 0em;
+          text-align: left;
+        }
+        &-heading {
+          font-family: SVN-Poppins;
+          font-size: 32px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 34px;
+          letter-spacing: 0em;
+          text-align: left;
+          margin-right: 6.6rem;
+          max-width: 395px;
+          margin-bottom: 4.6rem;
+          padding: 10px 0;
+        }
+      }
+    }
+  }
+  &-image {
+    margin-bottom: 16rem;
+    &-src {
+      margin: 0 auto;
+    }
+  }
+  &-technology {
+    margin-bottom: 16rem;
+    .technology {
+      display: flex;
+      align-items: flex-start;
+      gap: 0 95px;
+      &-heading {
+        font-family: SVN-Poppins;
+        font-size: 42px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 44px;
+        letter-spacing: 0em;
+        text-align: left;
+        max-width: 385px;
+      }
+      &-subheading {
+        font-family: SVN-Poppins;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 36px;
+        letter-spacing: 0em;
+        text-align: left;
+        position: relative;
+        padding-top: 20px;
+        &::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 50px;
+          height: 5px;
+          background: #00c1c1;
+        }
+      }
+    }
+    .technology__element {
+      display: flex;
+      gap: 0 60px;
+      justify-content: center;
+      &-left,
+      &-right {
+        display: flex;
+        gap: 30px 0;
+        flex-direction: column;
+      }
+      &-left {
+        align-items: flex-end;
+      }
+      &-right {
+        align-items: flex-start;
+      }
+      .technology-text {
+        font-family: SVN-Poppins;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 48px;
+        letter-spacing: 0em;
+        text-align: left;
+        display: inline-block;
+        padding: 6rem;
+        background: linear-gradient(
+          90deg,
+          #00c1c1 4.56%,
+          rgba(0, 193, 193, 0.2) 100%
+        );
+      }
+    }
+  }
+}
