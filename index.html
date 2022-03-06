@@ -235,7 +235,7 @@
                                         alt="" class="services-item-right-img">
                                 </div>
                             </div>
-                            <div class="services__how-lists-item">
+                            <div class="services__how-lists-item order-4">
                                 <div class="services-item-left">
                                     <img src="./assets/image/service.png" alt=""
                                         class="services-item-left-img">
@@ -394,7 +394,7 @@
                             <p class="footer__top-text">Headquarters And
                                 Delivery
                                 Centre</p>
-                            <img src="./assets/img/logo.png" alt=""
+                            <img src="./assets/image/header_logo.png" alt=""
                                 class="footer__top-logo">
                             <p class="footer__top-subtext">Rep quia consequuntur
                                 magni
@@ -425,26 +425,39 @@
             <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
             <script>
                 const swiper = new Swiper('.swiper', {
-                    slidesPerView: 2,
-                spaceBetween: 60,
+                    slidesPerView: 1,
+                    spaceBetween: 10,
                     loop:true,
-                        // If we need pagination
-                        pagination: {
-                            el: '.swiper-pagination',
+                    breakpoints: {
+                        640: {
+                            slidesPerView: 1,
+                            spaceBetween: 20,
                         },
+                        768: {
+                            slidesPerView: 2,
+                            spaceBetween: 30,
+                        },
+                        1024: {
+                            slidesPerView: 2,
+                            spaceBetween: 30,
+                        },
+                        1280: {
+                            slidesPerView: 2,
+                            spaceBetween: 30,
+                        },
+                        1920: {
+                            slidesPerView:2,
+                            spaceBetween:30,
+                        }
+                    },
                         
-                        // Navigation arrows
                         navigation: {
                             nextEl: '.swiper-button-next',
                             prevEl: '.swiper-button-prev',
                         },
                         
-                        // And if we need scrollbar
-                        scrollbar: {
-                            el: '.swiper-scrollbar',
-                        },
-                        
-                        });
+                      
+                });
             </script>
         </body>
     </html>
