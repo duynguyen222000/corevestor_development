@@ -111,3 +111,50 @@
     top: 72% !important;
   }
 }
+@include ipad() {
+  .swiper {
+    width: 100%;
+    h2 {
+      font-size: 28px;
+      margin-bottom: 10rem;
+    }
+  }
+  .item-left {
+    padding: 60px 30px;
+    border-top: 1px solid #3ccace;
+  }
+  .item-left img {
+    min-width: 63px;
+    height: 69px;
+  }
+  .item-right {
+    padding: 24px;
+    background: linear-gradient(90deg, #003646 0%, rgba(0, 54, 70, 0.2) 100%);
+  }
+  .item-right p {
+    font-size: 12px;
+  }
+  .item-right h4 {
+    font-size: 22px;
+    line-height: 1;
+    margin-bottom: 16px;
+  }
+  .swiper-button-prev,
+  .swiper-rtl .swiper-button-next {
+    left: 0 !important;
+    right: auto;
+  }
+  .swiper-button-next,
+  .swiper-rtl .swiper-button-prev {
+    right: 0 !important;
+    left: auto;
+  }
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    font-size: 30px !important;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    top: 72% !important;
+  }
+}
